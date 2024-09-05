@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box-Model</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+        }
+        .container{
+            border:5px solid red;
+            height:30vh;
+            width:30vw;
+            /*margin:50px;*/
+           margin:50px 40px 30px 20px;
+
+            /*top,right,bottom,left for 4*/
+            /*top bottom,left right for 2*/
+            /*top ,left right ,bottom for 3*/
+            padding:30px;
+
+
+        }
+        .container1{
+            /*border:5px solid black;*/
+            border-width:5px;
+            border-style:double;
+            border-color:black;
+            border-bottom-left-radius: 40px;
+            border-bottom-color: mediumpurple;
+            height:30vh;
+            width:30vw;
+            margin:50px 40px 30px 20px;
+        }
+        .container2{
+            border:2px solid red;
+            height:300px;
+            width:400px;
+            box-sizing:content-box;
+            margin:50px 40px 30px 20px;
+        }
+        .container3{
+            border:2px solid red;
+            height:300px;
+            width:400px;
+            box-sizing:border-box;
+            margin:50px 40px 30px 20px;
+        }
+        /*body{
+            display:flex;
+            justify-content:center;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>lorem ipsum dolor sit.</p>
+    </div>
+    <div class="container1"></div>
+    <div class="container2"></div>
+    <div class="container3"></div>
+
+</body>
+</html>
