@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline and Block Elements</title>
+</head>
+<body>
+
+   <h1>Block</h1>
+ <section>
+    <div>
+        <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+        <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+        <h3>hi iam h3</h3>
+        <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+
+    </div>
+</section>
+<article>
+    <div>
+        <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+        <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+        <h3>hi iam h4</h3>
+        <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+
+    </div>
+</article>
+<ul>
+    <li><a href="http://google.com">visit google</a></li>
+    <li><a href="http://facebook.com">visit facebook</a></li>
+    <li><a href="http://wikipedia.com">visit wikipedia</a></li>
+    <li><a href="http://reddit.com">visit reddit</a></li>
+</ul>
+   <ol>
+       <li><a href="http://google.com">visit google</a></li>
+       <li><a href="http://facebook.com">visit facebook</a></li>
+       <li><a href="http://wikipedia.com">visit wikipedia</a></li>
+       <li><a href="http://reddit.com">visit reddit</a></li>
+   </ol>
+   <iframe src="https://youtu.be/mL1H-1i_Z5Y?si=tlBB38x3l23GYaGy" >Video</iframe>
+   <nav>
+       <a href="/html/">HTML</a>
+       <a href="/css/">CSS</a>
+       <a href="/js/">JavaScript</a>
+       <a href="/python/">Python</a>
+   </nav>
+   <br>
+   <br>
+
+   <article>
+       <header>
+           <h1>A heading here</h1>
+           <p>Posted by John Doe</p>
+           <p>Some additional information here</p>
+       </header>
+       <p>Lorem Ipsum dolor set amet....</p>
+   </article>
+   <br>
+   <br>
+
+   <p>You <em>have</em> to hurry up!</p>
+   <br>
+   <br>
+
+   <form>
+       <label for="fname">First name:</label>
+       <input type="text" id="fname" name="fname">
+       <br><br>
+       <label for="lname">Last name:</label>
+       <input type="text" id="lname" name="lname">
+       <br><br>
+       <input type="submit" value="Submit">
+   </form>
+
+
+   <h1>Inline</h1>
+<sub>C<sup>6</sup>H<sup>12</sup>O<sup>2</sup></sub>
+   <!--inline h is liye same line mei aarha h ise separate krne ke liye br tag use karenge-->
+   <br>
+<sup>Word<sub>text</sub></sup>
+<br>
+   <p>This is some normal text.</p>
+   <p><small>This is some smaller text.</small></p>
+   <br>
+<p><big>This is my bag.</big></p>
+
+<p>Iam going to <strong>Agra</strong></p>
+
+<p>Iam goinf to <weak>Mumbai</weak></p>
+   <br>
+   <i>Palak</i>
+
+<u>Good Morning!</u>
+   <br>
+<strong>IAM PALAK</strong>
+   <br>
+<weak>yes</weak>
+<audio src=""></audio>
+   <button type="submit">Submit</button>
+<img style="width:300px;height:500px;"src="https://images.unsplash.com/photo-1722525900762-a1969eb9372a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D">
+
+
+
+
+
+
+</body>
+</html>
