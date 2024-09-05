@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <style>
+        p{
+            background-color:yellow; /*attribute selector*/
+        }
+        div p{
+              font-size:40px;  /*descendant selectorw*/
+        }
+        section>div>p {
+            background-color:skyblue;
+        }
+
+        div>p{
+            background-color:lawngreen;  /* jo directly div ke andr hunge sirf unhe (direct child of div)*/
+
+        }
+        div+p{
+                text-align: center;  /*immediate sibling*/
+        }
+        h2~li{
+            color:black; /*general sibling*/
+        }
+        input [type="text"]{
+                background-color: #66aaff;
+        }
+        a:link{                              /*pseudo classes*/
+            text-decoration:none;
+            color:red;
+
+        }
+        a:hover{
+            text-decoration:none;
+            color:purple;
+        }
+        a:visited{
+            color:orangered;
+        }
+       li:active{
+            background-color: blue;
+            color:white;    /* cursor lekr gye roke rhe toh wo active state mei rhega jbtk click krke rkhoge*/
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Iam in GLA</p>
+        <section>
+            <p>My name is Palak</p>
+        </section>
+
+        <p>You are a good girl</p>
+    </div>
+    <p>Iam girl</p>
+
+
+<br>
+    <section>
+        <section>
+            <div>
+                <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+                <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+                <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+                <h3>hi iam h3</h3>
+
+
+            </div>
+        </section>
+
+    </section>
+    <br>
+    <br>
+    <article>
+        <div>
+            <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+            <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+            <h3>hi iam h4</h3>
+            <p>lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
+
+        </div>
+    </article>
+    <label type="name">Name:</label>
+    <input type="text" placeholder="Enter your name here.." id="name">
+
+
+    <a  href="https://google.com">Google</a>
+    <ul>
+        <li>palak</li>
+    </ul>
+
+
+
+
+
+
+
+</body>
+</html>
