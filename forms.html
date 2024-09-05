@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+   <style>
+       form{
+           /*border: 2px solid red;*/
+           width: 20%;
+           margin: auto;
+           background-color:yellow;
+           font-size:25px;
+           font-weight:bold;
+           color:blueviolet;
+           border-radius:25px;
+           display:flex;
+           align-items:center;
+           justify-content:center;
+
+       }
+
+       h1{
+           text-align:center;
+       }
+
+       /*div{
+           background-color:palegreen;
+           display:flex;
+           align-items:center;
+           justify-content:center;
+           color:blueviolet;
+       }*/
+
+
+</style>
+<body>
+<h1>Forms in HTML</h1>
+<form action="backend.js">
+    <fieldset>
+        <legend>Personal Details</legend>
+        <div>
+            <!--description of input-->
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name here.." id="name">
+        </div>
+        <br>
+        <div>
+            <label for="num">Age:</label>
+            <input type="number" placeholder="Enter your age.." id="num">
+        </div>
+        <br>
+        <!--type:radio,text, number, email,password ,date ,time ,checkbox file-->
+        <!--button:submit,reset,disabled-->
+        <div>
+            <label for="em">Email:</label>
+            <input type="email" placeholder="Enter your email.." id="em">
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" placeholder="Enter your password.." id="pass">
+        </div>
+        <br>
+        <div>
+            <label for="d">Date:</label>
+            <input type="date" placeholder="Enter date.." id="d">
+        </div>
+        <br>
+        <div>
+            <label for="t">Time:</label>
+            <input type="time" placeholder="Enter time.." id="t">
+        </div>
+        <br>
+        <div>
+            <label for="f">File:</label>
+            <input type="file" placeholder="choose file.." id="f">
+        </div>
+        <br>
+        <div>
+            <label for="DB">D.O.B:</label>
+            <input type="date" placeholder="Enter your date_of_birth.." id="db">
+        </div>
+        <br>
+        <div>
+            <label>Movies:</label>
+            <select>
+                <option value=" " selected>Stree2</option>
+                <option>Chemistry</option>
+                <option>Physics</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="abcde">Male
+            <input type="radio" name="abcde">Female
+            <input type="radio" name="abcde">Other
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <p>lorem</p>
+    </fieldset>
+
+</form>
+</body>
+</html>
