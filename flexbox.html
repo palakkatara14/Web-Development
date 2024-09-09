@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        /* used for responsive layout design*/
+        /*flex box:*/
+        /*flex-child,*/
+
+        /*flex-container*/
+       /* display:flex;
+        flex-direction:row,row-reverse,column,column-reverse;
+        flex-wrap:wrap,no wrap;
+        justify-content:center;  justify content always works on main axis(horizontal)
+        align-items:center;  align items: hmesha cross axis pr kaam krta hai(vertical)
+        align-content:jo rows ke beech mei space h kuch maipulation krna h toh wo uspr kaam krta hai*/
+
+        .container{
+            border:2px solid red;
+            height:1000px;
+            width:1000px;
+            display:flex;
+            flex-direction:row;
+            /*justify-content:flex-start;      /*(start se)*/
+            justify-content:flex-end;        /*  (end se)  */
+            justify-content:center;          /*(center mei aayenge) */
+            justify-content:space-between;    /*( isme direct starting se chalu hoga end tk jaega sirf beech beech mei gap aajaega) */
+            justify-content:space-around;     /* (space starting se end tk bhi spcae chodegi) */
+            justify-content:space-evenly;     /* (barabar mei space aajega) */
+           align-items:center;
+        }
+
+        .item{
+            border:2px solid green;
+            height:100px;
+            width:100px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item" id="item1">item 1</div>
+    <div class="item" id="item2">item 2</div>
+    <div class="item" id="item3">item 3</div>
+    <div class="item" id="item4">item 4</div>
+    <div class="item" id="item5">item 5</div>
+
+</div>
+
+
+</body>
+</html>
