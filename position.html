@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        .main{
+            border:2px solid black;
+            height:90vh;
+            width:90vw;
+        }
+        .container{
+            border:2px solid green;
+            height:70%;
+            width:70%;
+            margin:30px;
+           /* position:relative ;*/
+        }
+        .item{
+            border:2px solid orange;
+            width:100px;
+            height:100px;
+            margin:2px;
+        }
+        #item2{
+            position:relative;
+            left:120px;
+            top:100px;
+        }
+        #item2{
+            position:absolute;
+        }
+
+        #item3{
+            position:fixed;
+        }
+        #item1{
+            position:sticky;  /* jb tk parent tb tk fixed ki trh kaam krega nhi toh  sticky ki trh*/
+        }
+
+    </style>
+</head>
+<body>
+    <!--static :by default ,absolute:element position itself according to its nearest position,relative:element position itself according to original position,
+    fixed:element fixed its position on body according,sticky:element behave as a fixed element according to body inside it-->
+    <div class="main">
+        <div class="container">
+            <div class="item" id="item1">item 1</div>
+            <div class="item" id="item2">item 2</div>
+            <div class="item" id="item3">item 3</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
