@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        /*flex-child*/
+        /*order:jispr ye lgta h wo sequence se aate h jo order aap dete ho baaki sbse phle ateh*/
+        /*flex-grow:sirf horizontal mei bhadaega*/
+        /*flex-shrink:3;
+        /*flex-basis:300px;
+        /*align-self:stretch,flex-start,flex-end;*/
+
+        .container{
+            border:2px solid red;
+            height:1000px;
+            width:1000px;
+            display:flex;
+            flex-direction:row;
+        }
+        .item{
+            border:2px solid green;
+            height:100px;
+            width:100px;
+
+        }
+         #item1{
+             border:2px solid orange;
+             order:1;
+             display:flex;
+             flex-shrink:3;
+
+             flex-grow:2;
+
+
+
+
+         }
+        #item2{
+            border:2px solid orange;
+            flex-basis:300px;
+
+        }
+         #item3{
+             border:2px solid orange;
+             align-self:flex-end;
+             order:2;
+             /*flex-grow:5;*/
+         }
+         #item4{
+             border:2px solid orange;
+
+         }
+         #item5{
+             border:2px solid orange;
+
+             order:3;
+         }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item" id="item1">item 1</div>
+    <div class="item" id="item2">item 2</div>
+    <div class="item" id="item3">item 3</div>
+    <div class="item" id="item4">item 4</div>
+    <div class="item" id="item5">item 5</div>
+
+</div>
+
+
+</body>
+</html>
