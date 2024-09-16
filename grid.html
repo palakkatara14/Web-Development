@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <style>
+        /*grid:combination of rows and columns*/
+        /*grid is a layout model*/
+        /*dispay:grid;*/
+        /* grid-template-columns:100px 200px jitne value utne column*/
+        /*grid-template-rows:50px 100px 200px jitne value utne rows ki height*/
+        /*justify-content:x-axis*/
+        /*align-items:y-axis*/
+        /*grid-area:row start column start row end  column end*/
+        /*justify-content:space-between;*/
+        /*row-gap:10px;*/
+        /*column-gap:20px;*/
+        /*gap:20px;*/
+        /*grid-template-rows:10px 20px 30px 50px;*/
+        /* grid-column-start:1;*/
+        /*grid-column-end:4;*/
+        /* grid-column:1 / span 2;*/
+        /*grid-area:2/2/4/4;*/
+        /*grid-template-columns:200px auto auto;*/
+        /*grid-template-columns:1fr 2fr 3fr;*/
+        /*grid-template-rows:10% 20% 100px auto;*/
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .container{
+               border:2px solid red;
+               display:grid;
+               height:100vh;
+               width:100vw;
+               grid-template-columns:200px 200px;
+
+
+
+
+        }
+
+        .box{
+            border:2px solid green;
+            /*height:100px;
+            width:100px;*/
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+         <div class="container">
+
+                 <div class="box" id="box-1">box-1</div>
+                 <div class="box" id="box-2">box-2</div>
+                 <div class="box" id="box-3">box-3</div>
+                 <div class="box" id="box-4">box-4</div>
+                 <div class="box" id="box-5">box-5</div>
+                 <div class="box" id="box-6">box-6</div>
+                 <div class="box" id="box-7">box-7</div>
+                 <div class="box" id="box-8">box-8</div>
+
+         </div>
+
+
+
+
+
+
+</body>
+</html>
