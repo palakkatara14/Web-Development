@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid layout</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:2fr 3fr 2fr;
+            border:2px solid red;
+            height:100vh;
+            grid-template-rows:10vh 40vh 40vh 10vh;
+            gap:4px 4px;
+
+
+        }
+        .box{
+            border:2px solid gray;
+        }
+        #navbar{
+            grid-area:1/1/2/4;
+            background-color:gainsboro;
+        }
+        #sidebar{
+            grid-area:2/1/5/2;
+            background-color:gainsboro;
+
+        }
+        #content{
+            grid-area:2/3/4/4;
+            background-color:gainsboro;
+
+        }
+        #footer{
+            grid-area:4/2/5/4;
+            background-color:gainsboro;
+
+        }
+        img{
+            height:50%;
+            width:40%;
+        }
+        button{
+             height:40px;
+            width:60px;
+
+
+        }
+        #box-5{
+            /*display:flex;*/
+            padding:12px;
+
+        }
+        #box-5 p,button{
+               margin:10px;
+        }
+
+
+    </style>
+</head>
+<body>
+       <div class="container">
+           <div class="box" id="navbar">Navbar</div>
+           <div class="box" id="sidebar">Sidebar</div>
+           <div class="box" id="content">Content</div>
+           <div class="box" id="footer">Footer</div>
+           <div class="box" id="box-5">
+
+               <img src="picture/a.gif">
+
+                   <p>lorem ipsum dolorr</p>
+
+                   <button>ClickHere</button>
+
+           </div>
+           <div class="box" id="box-6">box-6</div>
+
+      </div>
+
+</body>
+</html>
