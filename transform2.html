@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*shape,size,position,angle,color:transform for state of change*/
+        /*to change element orientation:rotate*/
+        /*for size*/
+        /*transform :scaleX(2);*/
+        /*transition for transform ki journey ko show krne ke liye*/
+        /*for position change :translate*/
+        .container{
+            border:2px solid black;
+            height:120vh;
+        }
+        .box{
+            border:2px solid black;
+            height:100px;
+            width:100px;
+            margin:100px;
+            /*transition:all;*/
+            transition:transform,background-color;
+            transition-duration:5s;
+            transition-delay:2s;
+            /*transition-timing-function:linear;*/
+            transition-timing-function:ease-in-out;
+        }
+
+        #box1:hover{
+            background-color:red;
+            transform:translateX(200px);
+            border-radius:40%;
+            /*transform:translateY(200px)*/
+            /*transform:translate(200px,200px)*/
+        }
+        #box2:hover{
+                 /*for size*/
+                background-color:yellow;
+               transform :scaleX(2);
+        }
+        #box3:hover{
+            background-color:pink;
+            transform:rotate(50deg);
+           /*transform:rotate(-50deg);
+           transform:rotateX(50deg);
+           transform:rotateY(50deg);*/
+        }
+        #box4:hover{
+            background-color:green;
+            transform:rotateY(50deg);
+        }
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+        <div class="box" id="box5">Box5</div>
+
+
+
+    </div>
+
+</body>
+</html>
