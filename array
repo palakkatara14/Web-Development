@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+   <!--collection of homogenous/heterogenous element-->
+<!--Array two types:static,dynamic-->
+   <!--arr.splice(start index,delete count) it changes the original array-->
+   <!--arr.slice(start index,end index) =returns a new subarray here end index is excluded (does not change original array)-->
+   <script>
+
+let arr=[];
+console.log(typeof(arr));
+let arr1=[1,2,3,4,5];
+console.log(arr1);
+let arr2=[2,'abcde',{},[],true,null,undefined];
+console.log(arr2);
+
+let arr3=[2,true];//insertion from last
+arr3.push("hello")
+console.log(arr3);
+
+let arr4=[2,false];
+arr4.pop()//deletion from last
+console.log(arr4);
+
+
+let arr5=[2,false];
+arr5.unshift();
+console.log(arr5);//starting se add
+
+let arr6=[2,false];
+arr6.shift();
+console.log(arr6);//last se delete krne ke liye
+
+
+
+</script>
+
+
+</body>
+</html>
