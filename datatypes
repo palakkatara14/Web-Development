@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+    <!--let,var,const-->
+    <!--let name-- :declaration-->
+    <!--const name-->
+    <!--var name-->
+    <!--let name="Palak" :initialization-->
+    <!--scope,redeclaration/reinitialization difference in them-->
+    <!--global,block,function :scopes-->
+    <!--block {
+
+    }-->
+    <!--function slide(){
+        function scope
+    }-->
+
+    <!--SCOPE:LET=BLOCK,VAR=FUNCTION,CONST=BLOCK-->
+    <!--REDECLARE:LET=NO,VAR=YES,CONST=NO-->
+    <!--REINITIALIZATION:LET=YES,VAR=YES,CONST=NO-->
+    <!--INITIALIZATION WITH HEADING:LET=NO,VAR=NO,CONST=YES-->
+    <!--PRIMITIVE:INT,BOOL,FLOAT,DOUBLE,NULL,UNDEFINED,Symbol,BigInt-->
+    <!--NON-PRIMITIVE:STRING,ARRAY-->
+
+
+
+</head>
+<body>
+  <script>
+/*var studentId = 3456;
+    let studentName = "Shiv";
+    const fees = 700000;
+
+
+console.log(studentId);
+console.log(studentName);
+console.log(fees);
+console.log("Hello World!");
+
+//let,const:block mei hai scope
+ //var :function scope
+ function sum(){
+     let sum=55;
+     if(sum==55){
+         var name="abcde";
+
+     }
+     console.log(name);
+ }
+ sum();
+ console.log(name);*/
+
+ let a=10;
+ console.log(typeof(a));
+
+ let b=10.657;
+ console.log(typeof(b));//number
+
+ let name='abcde';
+ console.log(typeof(name));//string
+
+let flag=true;
+console.log(typeof(flag));//boolean
+
+let salary;
+console.log(typeof(salary));//undefined
+
+let id=null;
+console.log(typeof(id));//object
+
+let bigNumber=BigInt("7836288895");
+console.log(typeof(bigNumber));
+
+
+</script>
+
+
+</body>
+</html>
